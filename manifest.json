@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "defautfr",
+  "version": "1.0",
+
+  "description": "Sets english as language of subtitles when connecting to opensubtitles main page",
+
+  "icons": {
+    "48": "icons/defautfrsub-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.opensubtitles.org/*"],
+      "js": ["defautfr.js"]
+    }
+  ]
+
+}
